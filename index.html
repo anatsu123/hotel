@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <span class="title">Hotel Europe</span>
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <ul class="links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="rooms.html">rooms</a>
+          </li>
+          <li>
+            <a href="facilities.html">facilities</a>
+          </li>
+          <li>
+            <a href="offers.html">offers</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="cover-container">
+      <span class="cover-text">A memorable experience.</span>
+      <button class="reserve-btn">Reserve Now</button>
+    </div>
+    <div class="about-container">
+      <div class="about-holder">
+        <span class="about-title">About Hotel Europe</span>
+        <p class="about-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio dignissimos similique corrupti rerum, praesentium tempore laborum sed repellat voluptatum perspiciatis assumenda enim quaerat reprehenderit, voluptatem cumque saepe, asperiores aliquam est.
+
+        Nam atque doloremque, ullam tempora ut obcaecati consectetur ratione fugit labore temporibus! At eos suscipit vel iure illo dolorum totam magni, tempore, unde laudantium, minus ullam quam. Debitis, fugit? Repellat.</p>
+        <button class="about-more-btn">read more</button>
+      </div>
+      <div class="about-cover">
+        <img class="about-img" src="./images/image2.jpg" alt="about us">
+      </div>
+    </div>
+
+    <div class="events-weddings">
+      <span class="event-wedding-title">Events & Weddings</span>
+      <span class="event-wedding-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi at doloribus, ea nostrum facilis corporis nulla beatae voluptates ipsa atque nam quia assumenda perferendis eum amet dolores repellendus quas.</span>
+    </div>
+
+    <div class="gallery-container">
+      <span class="gallery-title">Our Galleries</span>
+      <div class="gallery-slider">
+        <div class="slide">
+          <img src="./images/image4.jpg" alt="" class="slide-img">
+          <!-- <h1>1</h1> -->
+        </div>
+          <div class="slide">
+            <img src="./images/image5.jpg" alt="" class="slide-img">
+            <!-- <h1>2</h1> -->
+            </div>
+            <div class="slide">
+              <img src="./images/image6.jpg" alt="" class="slide-img">
+              <!-- <h1>3</h1> -->
+            </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-container">
+      <div class="left-column">
+        <div>
+            <p class="hotel-name">Hotel Europe</p>
+            <p class="hotel-description">will treat you the best</p>
+        </div>
+        <div>Address:somewhere</div>
+        <div>Phone number:12345678</div>
+        <div>email:hoteleuropa@myemail.com</div>
+      </div>
+      <div class="footer-middle-column">
+        <div><a href = "./index.html">ABOUT US<a></div>
+        <div><a href = "./contact.html">CONTACT US</div>
+        <div><a href = "./rooms.html">ROOMS & RATES</div>
+        <div><a href = "./facilities.html">FACILITIES</div>
+        <div><a href="faq.html">FAQ</a></div>
+        </div>
+      <div class="footer-right-column">
+        <div><a >FACEBOOK</a></div>
+        <div><a>INSTAGRAM</a></div>
+        <div><a >TWITTER</a></div>
+        <div><a>SNAPCHAT</a></div>
+      </div>  
+    </footer>
+    <!-- javascript -->
+    <script src="app.js"></script>
+    <script src="./nav.js"></script>
+  </body>
+</html>

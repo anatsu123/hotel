@@ -17,6 +17,7 @@
 //     //alternative method toggle
 //     links.classList.toggle("show-links");
 // });
+const readMore = document.querySelector(".about-more-btn");
 
 let slideNumber = 1;
 Slideshow(slideNumber);
@@ -35,3 +36,11 @@ for(let i = 0 ; i < slides.length ; i++){
 }
 slides[slideNumber-1].style.display = "block";
 };
+
+readMore.addEventListener("click",function(){
+    
+    document.querySelector(".extra").classList.toggle("hidden-content");
+    if(!readMore.classList.contains == "hidden-content");
+    readMore.textContent = "read less";
+
+});

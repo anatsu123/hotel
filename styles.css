@@ -275,3 +275,7 @@ footer div {
 .footer-middle-column div, .footer-right-column div {
   padding: 5px;
 }
+
+.hidden-content{
+  display: none;
+}

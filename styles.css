@@ -1,0 +1,277 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
+
+/*
+=============== 
+Variables
+===============
+=============== 
+Global Styles
+===============
+*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: hsl(210, 36%, 96%);
+  color: hsl(209, 61%, 16%);
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+
+}
+a {
+  text-decoration: none;
+}
+
+/*  global classes */
+
+.title {
+  font-size: 1.4rem;
+  color: hsl(205, 86%, 81%);
+}
+
+/*
+=============== 
+Navbar
+===============
+*/
+nav {
+  background: #fff;
+  
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav-toggle {
+   font-size: 1.5rem; 
+  color: hsl(205, 78%, 60%);
+   background: transparent; 
+   border-color: transparent; 
+  transition:all 0.35s linear;
+  cursor: pointer;
+}
+
+.links a {
+  color: hsl(209, 34%, 30%);
+  font-size: 1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition:all 0.35s;
+}
+.links a:hover {
+  background: hsl(205, 86%, 81%);
+  color:hsl(205, 78%, 60%);
+  padding-left: 1.5rem;
+}
+.links {
+   height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear; 
+}
+.show-links {
+  height: auto;
+}
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  
+  .links {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+}
+/* end of navbar */
+/* cover  */
+.cover-container {
+  display: flex;
+  flex-direction: column;
+  background-image:url('./images/image1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+  padding: 150px;
+}
+.cover-text {
+  color: white;
+  font-size: 3rem;
+}
+.reserve-btn {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  width: fit-content;
+  background-color: hsl(205, 86%, 81%);
+  padding: 00.5rem;
+  border-style: none;
+}
+/* about section */
+.about-container {
+  display: flex;
+  flex-direction: row;
+  padding: 5rem;
+}
+.about-title {
+  padding: 0.1rem ;
+  font-size: 1.5rem;
+  /* background-color: red; */
+}
+.about-content {
+  padding: 1rem 0;
+}
+.about-cover {
+  width: 50%;
+}
+.about-holder {
+  width: fit-content;
+}
+.about-cover img {
+  width: 100%;
+}
+/* aobut events and weddings */
+.events-weddings {
+  background-image:url("./images/image3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+  padding: 4rem;
+}
+.event-wedding-title {
+  font-size: 2rem;
+  color: white;
+  padding: 2.5rem;
+}
+.event-wedding-text {
+  color: white;
+  padding: 5rem 0;
+}
+
+/* gallery */
+.gallery-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.gallery-slider {
+  display: flex;
+  flex-direction: row;
+}
+.gallery-title {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.slide {
+  display: none;
+  flex-direction: row;
+  padding:2rem;
+  text-align: center;
+}
+.slide-img {
+  width: 50%;
+  
+  /* padding: 0 10rem; */
+}
+.slide h1 {
+  justify-content: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 0 3px 3px 0;
+  background-color: #bbb8b8;
+}
+
+.next {
+  right:22%;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left:22%;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* footer */
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #3E3C3C;
+  color: white;
+  align-items: center;
+  justify-content:space-evenly;
+  padding: 20px;
+}
+footer div {
+      
+  font-size: 16px;
+}
+.left-column div{
+  align-content: center;
+  padding: 10px 0 5px 0;
+}
+
+.hotel-name {
+  font-size: 30px;
+  margin: 0;
+}
+.hotel-description {
+  font-size: 10px;
+  
+  margin: -5px 0;
+}
+.footer-middle-column div, .footer-right-column div {
+  padding: 5px;
+}

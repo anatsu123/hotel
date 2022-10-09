@@ -1,0 +1,53 @@
+.banner-container{
+    background-image: url(./images/facilites-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 10rem;
+}
+.facilities-banner-text{
+    font-size: 2rem;
+    color: white;
+}
+.facility-types{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+}
+.facility{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    max-width:45%;
+}
+.facility a{
+    background-color: white;
+    padding: 2rem;
+    font-weight: bold;
+
+}
+/* other services */
+.other-services {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+.other-services ul {
+    list-style-type: none;
+}
+
+.other-services li {
+    font-weight: bold;
+    padding: 5px 0;
+}
+.first-line {
+    color:blueviolet;
+    font-size: 18px;
+}

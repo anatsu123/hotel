@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.img-container {
+    max-width: 40%;
+    padding: 2rem;
+}
+.content-container{
+    max-width: 40%;
+}
+.img-container img{
+    width: 100%;
+}
+.content-container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.content-container h1 {
+    color: steelblue;
+}
+.content-container span {
+    font-weight: bold;
+    font-size: large;
+    padding: 1rem;
+}
+.countdown-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.countdown-element{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color:rgb(18, 53, 156);
+    color: white;
+}
+.days, .hours, .minutes, .seconds{
+    font-size: 2rem;
+}
+
+@media only screen and (max-width:800px) {
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .img-container {
+        max-width: 100%;
+    }
+    .content-container {
+        max-width: 100%;
+    }
+}
